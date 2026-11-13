@@ -1,0 +1,64 @@
+@media (max-width: 1000px) {
+  .hero { grid-template-columns: 1fr 1fr; gap: 28px; }
+  .hero h1 { font-size: clamp(46px, 6vw, 64px); letter-spacing: -3px; }
+  .showcase-section { gap: 35px; }
+  .feature-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 760px) {
+  .container { width: min(100% - 36px, var(--container)); }
+  .section { padding-block: 78px; }
+  .navbar { height: 70px; }
+  .nav-links { position: absolute; top: 69px; right: 18px; left: 18px; display: none; align-items: stretch; gap: 0; padding: 10px; border: 1px solid var(--line); border-radius: 16px; background: var(--bg-elevated); box-shadow: var(--shadow); }
+  .nav-links--open { display: flex; flex-direction: column; }
+  .nav-links a { padding: 13px 12px; }
+  .nav-links .nav-mobile-cta { display: flex !important; align-items: center; gap: 8px; color: var(--purple-bright); }
+  .button--nav { display: none; }
+  .menu-toggle { display: grid !important; }
+  .hero { min-height: auto; grid-template-columns: 1fr; gap: 35px; padding-top: 76px; padding-bottom: 75px; }
+  .hero__content { text-align: center; }
+  .hero__content .eyebrow { justify-content: center; }
+  .hero h1 { font-size: clamp(49px, 12vw, 68px); }
+  .hero__description { margin-inline: auto; }
+  .hero__actions, .hero__proof { justify-content: center; }
+  .hero-visual { width: min(100%, 560px); margin-inline: auto; }
+  .dashboard-card { transform: none; }
+  .floating-note { right: -5px; }
+  .logo-cloud__items { font-size: 15px; }
+  .showcase-section { grid-template-columns: 1fr; gap: 35px; }
+  .showcase-copy { text-align: center; }
+  .showcase-copy > p { margin-inline: auto; }
+  .check-list { width: fit-content; margin-inline: auto; text-align: left; }
+  .pricing-grid, .testimonial-grid { grid-template-columns: 1fr; max-width: 520px; margin-inline: auto; gap: 22px; }
+  .pricing-card--featured { order: -1; }
+  .testimonial-quote { min-height: auto; }
+  .section-heading { margin-bottom: 35px; }
+}
+@media (max-width: 480px) {
+  .container { width: calc(100% - 30px); }
+  .section { padding-block: 66px; }
+  .hero { padding-top: 62px; }
+  .hero h1 { letter-spacing: -2.7px; }
+  .hero__actions { flex-direction: column; }
+  .hero__actions .button { width: 100%; }
+  .dashboard-card__body { padding: 13px; }
+  .dashboard-heading h3 { font-size: 16px; }
+  .metric { padding: 10px; }
+  .metric strong { font-size: 21px; }
+  .chart-bars { gap: 4px; height: 80px; }
+  .floating-note { right: 0; bottom: -18px; transform: scale(.9); transform-origin: right bottom; }
+  .logo-cloud__items { gap: 17px 24px; font-size: 13px; }
+  .feature-grid { grid-template-columns: 1fr; }
+  .feature-card { min-height: 180px; }
+  .section-heading h2, .showcase-copy h2, .footer-cta h2 { letter-spacing: -1.8px; }
+  .kanban-content { padding: 12px; }
+  .kanban-columns { gap: 5px; }
+  .kanban-column { padding: 6px; }
+  .task-card { padding: 7px; }
+  .task-card strong { font-size: 8px; }
+  .cursor-bubble { right: 2px; bottom: -17px; }
+  .footer-bottom { flex-wrap: wrap; justify-content: center; padding-block: 20px; text-align: center; }
+  .footer-bottom p { order: 3; width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
